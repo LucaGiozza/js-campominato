@@ -36,25 +36,32 @@ function numeroCasuale(min,max){
 console.log(numeri)
 
 
-// i numeri non possono essere duplicati
 
-// non so come si fa
 
 
 
 // In seguito deve chiedere all’utente (100 - 16) volte di
 //  inserire un numero alla volta, sempre compreso tra 1 e 100.
 
+// var inserisci = parseInt(prompt('inserisci un numero da 1 a 100'));
+
+//  while( inserisci < 1 && inserisci > 100){
+//      var inserisci = parseint(prompt('attenzione, il numero deve essere compreso tra 1 e 100'))
+//  }
 
 
+ for(var i= 0 ; i < 84; i++  ){
 
-
-for(var i= 0 ; i < 84; i++  ){
     var inserisci = parseInt(prompt('inserisci un numero da 1 a 100'));
-   if( inserisci != numeri[i]){
-       
-   }else if( inserisci == numeri[i]){
-       alert('hai preso la bomba,hai perso')
-   }
+       if(inserisci < 1 || inserisci > 100 ){
+           alert('non inserire numeri minori di 0 o maggiori di 100')
+       }
+    
+    if( inserisci != numeri[i]){
+      
+    }else if( inserisci == numeri[i]){
+        alert('hai preso la bomba,hai perso')
+    }
 
-}
+ }
+
