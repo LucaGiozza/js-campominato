@@ -12,3 +12,31 @@
 // cioè il numero di volte che l’utente ha inserito un 
 // numero consentito.
 
+
+
+
+// Il computer deve generare 16 numeri casuali tra 1 e 100.
+var numeri = [ ] ;
+
+
+while(numeri.length < 16 + 1){
+ var numeroRandom = numeroCasuale(1,100);
+ if(!numeri.includes(numeroRandom)){
+     numeri.push(numeroRandom)
+ }
+
+}
+
+function numeroCasuale(min,max){
+    return Math.floor(Math.random() * (max - min + 1) + min);
+
+  
+}
+
+console.log(numeri)
+
+
+// i numeri non possono essere duplicati
+
+// non so come si fa
+
