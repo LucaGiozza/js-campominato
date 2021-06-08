@@ -58,7 +58,7 @@ console.log(numeri)
          }
          
          
-    }
+    
       
          var numeroRandom = numeroCasuale(1,100);
       if( inserisci != numeri[i]){
