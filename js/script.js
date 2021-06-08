@@ -22,7 +22,7 @@ var numeri = [ ] ;
 while(numeri.length < 16 + 1){
  var numeroRandom = numeroCasuale(1,100);
  if(!numeri.includes(numeroRandom)){
-     numeri.push(numeroRandom)
+     numeri.push(numeroRandom);
  }
 
 }
@@ -40,3 +40,21 @@ console.log(numeri)
 
 // non so come si fa
 
+
+
+// In seguito deve chiedere all’utente (100 - 16) volte di
+//  inserire un numero alla volta, sempre compreso tra 1 e 100.
+
+
+
+
+
+for(var i= 0 ; i < 84; i++  ){
+    var inserisci = parseInt(prompt('inserisci un numero da 1 a 100'));
+   if( inserisci != numeri[i]){
+       
+   }else if( inserisci == numeri[i]){
+       alert('hai preso la bomba,hai perso')
+   }
+
+}
