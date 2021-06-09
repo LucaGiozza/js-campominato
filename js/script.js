@@ -19,6 +19,7 @@
 var numeri = [ ] ;
 
 
+
 while(numeri.length < 16 + 1){
  var numeroRandom = numeroCasuale(1,100);
  if(!numeri.includes(numeroRandom)){
@@ -50,32 +51,46 @@ console.log(numeri)
 
 
 
-  for(var i= 0 ; i < 84; i++  ){
+//   for(var i = 0 ; i < 84; i++  ){
+      
 
-     var inserisci = parseInt(prompt('inserisci un numero da 1 a 100'));
-         if(inserisci < 1 || inserisci > 100 ){
-             alert('non inserire numeri minori di 0 o maggiori di 100');
-         }
+      var inserisci = parseInt(prompt('inserisci un numero da 1 a 100'));
+//          if(inserisci < 1 || inserisci > 100 ){
+//              alert('non inserire numeri minori di 0 o maggiori di 100');
+//          }
          
          
     
-      
-         var numeroRandom = numeroCasuale(1,100);
-      if( inserisci != numeri[i]){
-          var inserisci = parseInt(prompt('inserisci un numero da 1 a 100'));
-      }else if( !numeri.includes(numeroRandom)){
-          numeri.push(numeroRandom);
+    
+//          var numeroRandom = numeroCasuale(1,100);
+//       if( inserisci != numeri[i]){
+          
+//       }else if(inserisci == numeri.includes ){
+          
 
-          alert('hai preso la bomba,hai perso');
-          break
-     }
+//           alert('hai preso la bomba,hai perso');
+          
+//      }
+     
 
-  }
+//   }
+function searchNumber(array, number){
+    for(var i = 0; i < 84 ; i++){
+        if(array[i] == number){
+            return alert('hai beccato la bomba') ;
+        }
+           
+        
+    }
+    
+}
+
+console.log(searchNumber(numeri, inserisci))
  
 
 //  L’utente non può inserire più volte lo stesso numero.
 
-//  non so come si faccia
+// 
 
 
 
