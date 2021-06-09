@@ -49,59 +49,30 @@ console.log(numeri)
 // un numero “vietato” o raggiunge il numero massimo possibile 
 // di numeri consentiti
 
+var semaforo = true
+var numeriGiusti = []
+
+   while(sefamoro ){
+        var inserisci = parseInt(prompt('inserisci un numero da 1 a 100'));
 
 
-//   for(var i = 0 ; i < 84; i++  ){
-      
-
-     
-//          if(inserisci < 1 || inserisci > 100 ){
-//              alert('non inserire numeri minori di 0 o maggiori di 100');
-//          }
-         
-         
-    
-    
-//          var numeroRandom = numeroCasuale(1,100);
-//       if( inserisci != numeri[i]){
-          
-//       }else if(inserisci == numeri.includes ){
+    if ( numeri.includes(inserisci) {
           
 
-//           alert('hai preso la bomba,hai perso');
-          
-//      }
+           alert('hai preso la bomba,hai perso');
+
+          semaforo = false
+      }else{
+          numeriGiusti.push(inserisci)
+      }
      
 
-//   }
-var inserisci = parseInt(prompt('inserisci un numero da 1 a 100'));
+   }
 
-if(inserisci < 1 || inserisci > 100 ){
-                 alert('non inserire numeri minori di 0 o maggiori di 100');
 
-             }
-function searchNumber(array, number){
-    
-     
-    for(var i = 0; i < 84 ; i++){
-          if(array[i] == number){
-             document.getElementById('risposta').innerHTML = 'Hai beccato la bomba, mi dispiace'
-          }
-              
-          
-         
-              
+ 
 
-          
-        
-        
-          
-        
-    }
-    
-}
 
-console.log(searchNumber(numeri, inserisci))
  
 
 //  L’utente non può inserire più volte lo stesso numero.
