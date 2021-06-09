@@ -20,7 +20,7 @@ var numeri = [ ] ;
 
 
 
-while(numeri.length < 16 + 1){
+while(numeri.length < 16 ){
  var numeroRandom = numeroCasuale(1,100);
  if(!numeri.includes(numeroRandom)){
      numeri.push(numeroRandom);
@@ -54,7 +54,7 @@ console.log(numeri)
 //   for(var i = 0 ; i < 84; i++  ){
       
 
-      var inserisci = parseInt(prompt('inserisci un numero da 1 a 100'));
+     
 //          if(inserisci < 1 || inserisci > 100 ){
 //              alert('non inserire numeri minori di 0 o maggiori di 100');
 //          }
@@ -74,12 +74,28 @@ console.log(numeri)
      
 
 //   }
+var inserisci = parseInt(prompt('inserisci un numero da 1 a 100'));
+
+if(inserisci < 1 || inserisci > 100 ){
+                 alert('non inserire numeri minori di 0 o maggiori di 100');
+
+             }
 function searchNumber(array, number){
+    
+     
     for(var i = 0; i < 84 ; i++){
-        if(array[i] == number){
-            return alert('hai beccato la bomba') ;
-        }
-           
+          if(array[i] == number){
+             document.getElementById('risposta').innerHTML = 'Hai beccato la bomba, mi dispiace'
+          }
+              
+          
+         
+              
+
+          
+        
+        
+          
         
     }
     
