@@ -112,8 +112,8 @@ switch(scelta){
 }
 
 
-var massimo = 100;
-var possibilità = massimo - 16;
+// var massimo = 100;
+// var possibilità = massimo - 16;
 
 // while per includere i numeri
   while(insieme.length < 16 ){
