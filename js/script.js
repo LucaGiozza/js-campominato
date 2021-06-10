@@ -84,10 +84,38 @@
 var insieme = [];
 var inserimento = [];
 
+// bonus
+var scelta = parseInt(prompt('inserisci la difficoltà :  0 , 1 oppure 2 '));
+
+// condizioni bonus
+while(scelta < 0 || scelta > 2 || isNaN(scelta)){
+    alert('attenzione devi scegliere un numero compreso tra 0 e 2')
+    var scelta = parseInt(prompt('inserisci 0 , 1 oppure 2 '))
+
+}
+
+// utilizzo switch per le diverse diffficoltà
+switch(scelta){
+    case 0 :
+     var massimo = 100;
+     var possibilità = massimo - 16; 
+     break;
+    case 1 :
+      var massimo = 80;
+      var possibilità = massimo - 16; 
+      break;
+    default :  
+      var massimo = 50;
+      var possibilità = massimo - 16; 
+      break;
+
+}
+
 
 var massimo = 100;
 var possibilità = massimo - 16;
 
+// while per includere i numeri
   while(insieme.length < 16 ){
    var numero = numeriRandom(1,massimo);
    if(!insieme.includes(numero)){
@@ -128,7 +156,9 @@ var lunghezzaArray = inserimento.length;
 
 // scrivo l'if per capire dopo quanti tentativi hai perso
 if(semaforo = true){
+    
     console.log('hai perso dopo ' + lunghezzaArray + ' tentativi')
+    // document.getElementById('risposta').innerHtml = 'hai perso dopo ' + lunghezzaArray + ' tentativi'
 }else{
     console.log('hai vinto!')
 }
@@ -151,6 +181,8 @@ function scopertaNumero(array, numero){
     }
     return false;
 }
+
+
 
 
 
